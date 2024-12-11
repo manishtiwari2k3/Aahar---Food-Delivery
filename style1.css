@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navigstion CSS Start */
+
+.Nav_st {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    padding: 25px 25.92px;
+}
+
+.nav_lst {
+    margin: 0 100px;
+}
+
+#nav_menu {
+    display: flex;
+    list-style-type: none;
+    margin-top: 10.368px;
+}
+
+.Nav_st a {
+    font-family: Montserrat;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0 25.92px;
+    font-size: 16.848px;
+}
+
+.Nav_st a:hover {
+    color: rgb(182, 8, 8);
+}
+
+
+/* Drop down 1 CSS Start */
+
+#drp1,
+#drp2 {
+    padding-bottom: 16px;
+}
+
+.drop_down1 {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 10px grey;
+    border-radius: 10px;
+    padding: 10px;
+    left: 240px;
+    top: 70px;
+}
+
+.drp2 {
+    left: 500px;
+}
+
+.drp3 {
+    left: 720px;
+}
+
+.drp4 {
+    left: 820px;
+}
+
+.drop_down1 li {
+    font-size: 20px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+#drp1:hover .drop_down1 {
+    display: block;
+}
+
+#drp2:hover .drop_down1 {
+    display: block;
+}
+
+#drp3:hover .drop_down1 {
+    display: block;
+}
+
+#drp4:hover .drop_down1 {
+    display: block;
+}
+
+.drop_down1 li:hover {
+    border-bottom: solid thin gray;
+    cursor: pointer;
+}
+
+
+/* Drop down CSS End */
+
+.user_cart {
+    margin-top: 10.368px;
+    font-size: 19.44px;
+    cursor: pointer;
+}
+
+.icon1 {
+    position: relative;
+    padding-right: 10px;
+}
+
+.icon1::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 20px;
+    left: 25px;
+    background-color: rgb(148, 148, 148);
+}
+
+
+/* Navigstion CSS End */
+
+
+/* Content 1 CSS Start */
+
+.content1 {
+    background: url('img/bgc.jpg') no-repeat center/cover;
+    height: 700px;
+}
+
+.content1_img {
+    position: absolute;
+    bottom: 212px;
+    left: 352px;
+}
+
+.content1_img img:nth-child(2) {
+    position: relative;
+    left: 342px;
+    bottom: 45px;
+}
+
+.content1>img {
+    position: absolute;
+    width: 950px;
+    top: -172px;
+    right: 659px;
+    animation: pizza_rotate 65s infinite;
+}
+
+@keyframes pizza_rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.input {
+    position: absolute;
+    top: 594px;
+    background-color: white;
+    padding: 25px 10px;
+    left: 111px;
+}
+
+input[type="text"] {
+    font-family: Montserrat;
+    font-weight: bold;
+    background-color: #feedb6;
+    padding: 25px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid #feedb6;
+    color: #222242;
+    width: 450px;
+    outline: none;
+}
+
+.input button {
+    color: white;
+    background-color: rgb(172, 5, 5);
+    border: none;
+    padding: 28px 40px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.input button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+
+/* Content 1 CSS End */
+
+
+/* Content 2 CSS Start */
+
+.content2 {
+    display: flex;
+    padding: 50px;
+    height: 708px;
+}
+
+.c2ch1,
+.c2ch2,
+.c2ch3 {
+    margin: 15px;
+}
+
+.c2ch1 {
+    padding: 126px 0;
+    width: 363px;
+}
+
+#c2_p1::before {
+    content: "~~~~~ ";
+}
+
+#c2_p1::after {
+    content: "~~~~~ ";
+}
+
+#c2_p1 {
+    font-family: 'Montserrat';
+    padding: 27px 0;
+}
+
+.c2ch1 h2 {
+    font-family: Montserrat;
+    font-size: 48px;
+    color: #595858;
+    font-weight: bold;
+    padding: 2px 0 31px 0;
+}
+
+.c2ch1 h3 {
+    font-family: raleway;
+    color: grey;
+    padding: 0px 0 20px 0;
+}
+
+#c2_p2 {
+    font-family: raleway;
+    color: grey;
+}
+
+.c2ch2,
+.c2ch3 {
+    overflow: hidden;
+}
+
+.c2_ch2_box {
+    overflow: hidden;
+    position: relative;
+    background-color: #d50c0d;
+    position: relative;
+    top: -4px;
+    color: white;
+    font-family: Montserrat;
+    padding: 50px 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.for_bgc {
+    background-color: #fdc50e;
+}
+
+.c2_ch2_box span {
+    font-family: raleway;
+    font-size: 33px;
+}
+
+.c2_ch2_box button {
+    background-color: white;
+    color: grey;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    padding: 12px 25px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.c2_ch2_box button:hover {
+    color: white;
+    background-color: black;
+}
+
+.white_of_discount {
+    font-family: raleway;
+    background-color: white;
+    padding: 57px;
+    position: relative;
+    border-radius: 117px;
+    bottom: 620px;
+    width: 190px;
+    height: 190px;
+    font-size: 21px;
+    padding-left: 16px;
+    left: 250px;
+}
+
+.discount {
+    font-family: raleway;
+    background-color: #d50c0d;
+    color: white;
+    padding: 57px;
+    position: relative;
+    border-radius: 117px;
+    bottom: 810px;
+    left: 260px;
+    width: 190px;
+    height: 190px;
+    font-size: 21px;
+    padding-left: 16px;
+}
+
+
+/* Content 2 CSS end */
+
+
+/* Content 3 CSS Start */
+
+.content3 {
+    background-color: rgba(128, 128, 128, 0.074);
+    padding: 21px 54px;
+    font-size: 26px;
+    font-family: raleway;
+    text-shadow: 0px -2px 5px white;
+}
+
+.content3_pizza_list {
+    background-color: rgba(128, 128, 128, 0.074);
+    padding: 50px;
+    display: flex;
+}
+
+.c3ch1 {
+    border-radius: 15px;
+    width: 376px;
+    text-align: center;
+    background-color: white;
+    font-family: Montserrat;
+    padding: 26px;
+}
+
+.c3ch1 img {
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.content3_pizza_list .c3ch1 h2 {
+    color: rgb(255, 255, 255);
+    background: url(img/content3_img1.png) no-repeat center/cover;
+    display: inline;
+    font-size: 17px;
+    padding: 11px 28px;
+}
+
+.content3_pizza_list .c3ch1 p {
+    padding: 26px 3px 0 0;
+    font-family: inherit;
+}
+
+.content3_pizza_list .c3ch1 button {
+    padding: 16px 27px;
+    background-color: rgba(128, 128, 128, 0.194);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 48px;
+    font-family: raleway;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: all .8s;
+}
+
+.for_gap {
+    margin: 0 35px;
+}
+
+.c3ch1:hover .button {
+    background-color: rgb(159, 9, 9);
+    color: white;
+    font-weight: bold;
+}
+
+.c3_price {
+    background-color: #fdc50e;
+    color: white;
+    display: inline;
+    padding: 20px 15px;
+    border-radius: 58px;
+    position: absolute;
+    transform: translate(111px, -331px) scale(0);
+    font-weight: bold;
+    transition: all .6s;
+}
+
+.c3ch1:hover .c3_price {
+    transform: translate(111px, -331px) scale(1);
+}
+
+
+/* Content 3 CSS End */
